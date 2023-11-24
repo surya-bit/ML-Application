@@ -56,12 +56,16 @@ python3, node , npm , flask , pip , tensorflow ,numpy, pandas, xgboost,joblib,fl
 # Output :
 
 **Predicted Receipt counts for the month selected**
+
 <img width="597" alt="pic1" src="https://github.com/surya-bit/ML-Application/assets/61753483/e42605c8-1ec3-460b-b397-257e1a89f3c9">
 
+
 **Predicted Receipt counts for all the days in the month selected**
+
 <img width="947" alt="pic2" src="https://github.com/surya-bit/ML-Application/assets/61753483/1d7d0ae0-6c0b-45e6-9bb0-ce5aa40e7956">
 
 **Predicted Receipt counts for the entire 2022 year**
+
 <img width="952" alt="pic3" src="https://github.com/surya-bit/ML-Application/assets/61753483/c15783ff-80c6-4db1-a7f1-b3ad3b2e6263">
 
 
