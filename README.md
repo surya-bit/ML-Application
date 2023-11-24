@@ -38,11 +38,11 @@ Receipt count prediction using XGBoost Regressor and LSTM
     6. The server communication component communicates with a server located at http://127.0.0.1:5000. It sends a POST request to this server when the user performs a 
        search. 
 
-# Installation libraries
+# Installation libraries :
 There is requirements file at **Final** which has all the libraries needed to run the code.
 python3, node , npm , flask , pip , tensorflow ,numpy, pandas, xgboost,joblib,flask_cors,calender.
 
-# Instructions on how to run the tool locally
+# Instructions on how to run the tool locally :
 1. Move to the Final/client folder and run the command : npm i (Installs all the packages)
 2. Open a new terminal and move into Final where the app.py server code is : run python app.py
 3. This will start server on port 5000 . (http://localhost:5000)
