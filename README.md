@@ -21,8 +21,8 @@ Receipt count prediction using XGBoost Regressor and LSTM
    2. Initialize the flask application.
    3. Load the model we trained before (xgb_model.pkl).
    4. The create_features function takes the date as input and creates additional columns such as 'dayofweek','quarter' ,'month','dayofyear,'dayofmonth','weekofyear',             drawing critical insights from the data and adding more strength to it.
-   5. The value_for_month function takes user_input which is a month . This function uses the trained model to predict and return the receipt_count for that particular            month in year 2022.
-   6. The data_for_month function takes user_input which is a month . This function uses the trained model to predict and return the receipt_count for all the days in that        particular selected month in year 2022.
+   5. The value_for_month function takes user_input which is a month . This function uses the trained model to predict and return the receipt_count for that particular            month for year 2022.
+   6. The data_for_month function takes user_input which is a month . This function uses the trained model to predict and return the receipt_count for all the days in that        particular selected month for year 2022.
    7. The data_for_year function just prints all the predicted receipt counts for year 2022.
    8. Define a single POST route ('/') to handle incoming search requests. The search function is executed when a POST request is made to the root endpoint ('/').
    9. Depending on the selected search option,It applies all the three functions and returns the json object which will be used in the client side.
