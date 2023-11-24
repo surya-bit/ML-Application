@@ -28,3 +28,27 @@ Receipt count prediction using XGBoost Regressor and LSTM
    9. Depending on the selected search option,It applies all the three functions and returns the json object which will be used in the client side.
    10. The application is run when the script is executed.
 
+5. The main file **app.jsx** which does the functionality of front end is found in the **Final/client/src** directory.
+    1. Import various dependencies and assets, including React hooks (useState, useEffect), Axios for making HTTP requests.
+    2. Do the state management.
+    3. The useEffect hook is triggered when the query state changes.If the query is not empty, it sends a POST request to the specified API endpoint with the search 
+       parameters and updates the results state with the response data.
+    4. I have used chartjs2 to create a interactive line chart visualization which updates based on user input.
+    5. UI rendering and CSS styling is done accordingly.
+    6. The server communication component communicates with a server located at http://127.0.0.1:5000. It sends a POST request to this server when the user performs a 
+       search. 
+
+# Installation libraries
+There is requirements file at **Final** which has all the libraries needed to run the code.
+python3, node , npm , flask , pip , tensorflow ,numpy, pandas, xgboost,joblib,flask_cors,calender.
+
+# Instructions on how to run the tool locally
+1. Move to the Final/client folder and run the command : npm i (Installs all the packages)
+2. Open a new terminal and move into Final where the app.py server code is : run python app.py
+3. This will start server on port 5000 . (http://localhost:5000)
+4. Move to the client folder again and run the command : npm run dev (Starts client side program)
+5. Navigate to http://localhost:5173
+6. Select one of the options (Month in 2022) . 
+7. The first value is the predicted receipt count for that selected month.
+8. The next visualization is a line chart which shows the predicted receipt counts for all the days in that selected month. Feel free to hover over the plot and check the readings
+9. The last plot is a line chart which shows the values predicted for the entire year(2022).
