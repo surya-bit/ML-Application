@@ -19,7 +19,7 @@ Receipt count prediction using XGBoost Regressor and LSTM
 4. In the **server directory** is the **app.py** file which does the following functionalities :
    1. Import all the necessary libraries needed.The installation libraries are given below.
    2. Initialize the flask application.
-   3. Load the model we trained before (xgb_model.pkl).
+   3. Load the model we trained before (xgb_model.pkl).You can find the model in the Final folder.
    4. The create_features function takes the date as input and creates additional columns such as 'dayofweek','quarter' ,'month','dayofyear,'dayofmonth','weekofyear',             drawing critical insights from the data and adding more strength to it.
    5. The value_for_month function takes user_input which is a month . This function uses the trained model to predict and return the receipt_count for that particular            month for year 2022.
    6. The data_for_month function takes user_input which is a month . This function uses the trained model to predict and return the receipt_count for all the days in that        particular selected month for year 2022.
@@ -52,3 +52,25 @@ python3, node , npm , flask , pip , tensorflow ,numpy, pandas, xgboost,joblib,fl
 7. The first value is the predicted receipt count for that selected month.
 8. The next visualization is a line chart which shows the predicted receipt counts for all the days in that selected month. Feel free to hover over the plot and check the readings
 9. The last plot is a line chart which shows the values predicted for the entire year(2022).
+
+# Output :
+
+**Predicted Receipt counts for the month selected**
+<img width="597" alt="pic1" src="https://github.com/surya-bit/ML-Application/assets/61753483/e42605c8-1ec3-460b-b397-257e1a89f3c9">
+
+**Predicted Receipt counts for all the days in the month selected**
+<img width="947" alt="pic2" src="https://github.com/surya-bit/ML-Application/assets/61753483/1d7d0ae0-6c0b-45e6-9bb0-ce5aa40e7956">
+
+**Predicted Receipt counts for the entire 2022 year**
+<img width="952" alt="pic3" src="https://github.com/surya-bit/ML-Application/assets/61753483/c15783ff-80c6-4db1-a7f1-b3ad3b2e6263">
+
+
+# Instructions on how to run the tool locally on docker containers :
+Two dockerfiles have been created . One for client and other for server. These files could be found on their respective directorier in Final Folder
+1. I have packaged my app in a Docker containers . You can pull it from DockerHub by running the below command :
+docker pull suryarajmachani/fetch-ml-project.
+2. To build and run locally . Follow the instructions below:
+   1. Move to the Final folder and run the command : docker build -t server .
+   2. Run the command : docker run -p 5000:5000 server
+   3. Move to the client folder and run the command :docker build -t client .
+   4. Run the command : docker run -p 5173:5173 client
