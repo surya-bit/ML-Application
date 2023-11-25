@@ -1,0 +1,6 @@
+numpy
+pandas
+xgboost
+joblib
+flask
+flask_cors
