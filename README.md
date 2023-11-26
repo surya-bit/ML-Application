@@ -1,7 +1,7 @@
 # ML-Application
 Receipt count prediction using XGBoost Regressor and LSTM
 # File Structure and Code Explanation:
-1. The folder fetch-ML contains 4 different subfolders . The **Final** folder contains all the main files to run the model and host the website.
+1. The folder final-fetch contains 4 different subfolders . The **Final** folder contains all the main files to run the model and host the website.
 2. The other three subfolders are:
    1. **Linear Regression model** : This folder contains the ipynb folder, where I implemented a Linear Regression model. I initally fitted a linear line with just one X 
       predictor i.e dayofyear . But this gave me very high RMSE Value around  9551151 .I further changed the model by introduction l1 and l2 regularization terms and              increasing the data strength by appending more data columns like 'dayofweek','quarter' ,'month','dayofyear,'dayofmonth','weekofyear' . This further reduced the RMSE         Value . Even though the data follows a linear trend , the linear regression model performs poorly .
