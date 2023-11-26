@@ -49,7 +49,7 @@ python3, node , npm , flask , pip , tensorflow ,numpy, pandas, xgboost,joblib,fl
 3. This will start server on port 5000 . (http://localhost:5000)
 4. Move to the client folder again and run the command : npm run dev (Starts client side program)
 5. Navigate to http://localhost:5173 or any of the networks displayed.
-6. Dockerfile is also included in the repo. You can also build the container locally:
+6. Dockerfile is also included in the repo and I think this is the right way to run the model.You can also build the container locally:
    1. To build a client :
       1. Navigate to the client folder. Run : docker build -t client .
       2. docker run -p 5173:5173 client
