@@ -80,7 +80,7 @@ Two dockerfiles have been created . One for client and other for server. These f
 1. I have packaged my app in a Docker containers .Please feel free to pull it from DockerHub by running the below commands :
    docker pull suryarajmachani/fetch-ml-project:client
    docker pull suryarajmachani/fetch-ml-project:server
-3. To build and run locally . Follow the instructions below:
+2. To build and run locally . Follow the instructions below:
    1. Run the command : docker run -p 5000:5000 suryarajmachani/fetch-ml-project:server
    2. Run the command : docker run -p 5173:5173 suryarajmachani/fetch-ml-project:client
-   5. Navigate to http://localhost:5173 
+3. Navigate to http://localhost:5173 
