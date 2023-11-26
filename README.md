@@ -16,7 +16,7 @@ Receipt count prediction using XGBoost Regressor and LSTM
        
 3. The main folder **Final** contains a client folder and **app.py** which is the server py file .
 
-4. In the **server directory** is the **app.py** file which does the following functionalities :
+4. The **app.py** file which does the following functionalities :
    1. Import all the necessary libraries needed.The installation libraries are given below.
    2. Initialize the flask application.
    3. Load the model we trained before (xgb_model.pkl).You can find the model in the Final folder.
