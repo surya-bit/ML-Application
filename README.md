@@ -51,14 +51,10 @@ python3, node , npm , flask , pip , tensorflow ,numpy, pandas, xgboost,joblib,fl
 5. Navigate to http://localhost:5173
 6. Dockerfile is also included in the repo. You can also build the container locally:
    1. To build a client :
-      Navigate to the client folder. Run : 1. docker build -t client .
-                                           2. docker run -p 5173:5173 client
+      Navigate to the client folder. Run : 1. docker build -t client . , docker run -p 5173:5173 client
    2. To build the server:
-      Navigate to the Final folder. Run :  1. docker build -t server .
-                                           2. docker run -p 5000:5000 server 
-      
-                                            
-8. Select one of the options (Month in 2022) . 
+      Navigate to the Final folder. Run :  1. docker build -t server . , docker run -p 5000:5000 server
+7. Select one of the options (Month in 2022) . 
 9. The first value is the predicted receipt count for that selected month.
 10. The next visualization is a line chart which shows the predicted receipt counts for all the days in that selected month. Feel free to hover over the plot and check the readings
 11. The last plot is a line chart which shows the values predicted for the entire year(2022).
