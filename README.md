@@ -78,8 +78,8 @@ python3, node , npm , flask , pip , tensorflow ,numpy, pandas, xgboost,joblib,fl
 # Instructions on how to run the tool locally on docker containers :
 Two dockerfiles have been created . One for client and other for server. These files could be found on their respective directorier in Final Folder
 1. I have packaged my app in a Docker containers .Please feel free to pull it from DockerHub by running the below commands :
-   docker pull suryarajmachani/fetch-ml-project:client
-   docker pull suryarajmachani/fetch-ml-project:server
+   1. docker pull suryarajmachani/fetch-ml-project:client
+   2. docker pull suryarajmachani/fetch-ml-project:server
 2. To build and run locally . Follow the instructions below:
    1. Run the command : docker run -p 5000:5000 suryarajmachani/fetch-ml-project:server
    2. Run the command : docker run -p 5173:5173 suryarajmachani/fetch-ml-project:client
