@@ -19,7 +19,7 @@ Receipt count prediction using XGBoost Regressor and LSTM
 4. The **app.py** file which does the following functionalities :
    1. Import all the necessary libraries needed.The installation libraries are given below.
    2. Initialize the flask application.
-   3. Load the model we trained before. Download the model from here https://drive.google.com/drive/folders/19CRYp8LyB3WIlZOWcGwXXF2W3EXHppKW?usp=sharing . You should store 
+   3. Load the model we trained before. Download the model from here https://drive.google.com/drive/folders/19CRYp8LyB3WIlZOWcGwXXF2W3EXHppKW?usp=sharing . You should copy 
       the model in the Final folder.
    4. The create_features function takes the date as input and creates additional columns such as 'dayofweek','quarter' ,'month','dayofyear,'dayofmonth','weekofyear',             drawing critical insights from the data and adding more strength to it.
    5. The value_for_month function takes user_input which is a month . This function uses the trained model to predict and return the receipt_count for that particular            month for year 2022.
