@@ -49,10 +49,19 @@ python3, node , npm , flask , pip , tensorflow ,numpy, pandas, xgboost,joblib,fl
 3. This will start server on port 5000 . (http://localhost:5000)
 4. Move to the client folder again and run the command : npm run dev (Starts client side program)
 5. Navigate to http://localhost:5173
-6. Select one of the options (Month in 2022) . 
-7. The first value is the predicted receipt count for that selected month.
-8. The next visualization is a line chart which shows the predicted receipt counts for all the days in that selected month. Feel free to hover over the plot and check the readings
-9. The last plot is a line chart which shows the values predicted for the entire year(2022).
+6. Dockerfile is also included in the repo. You can also build the container locally:
+   1. To build a client :
+      Navigate to the client folder. Run : 1. docker build -t client .
+                                           2. docker run -p 5173:5173 client
+   2. To build the server:
+      Navigate to the Final folder. Run :  1. docker build -t server .
+                                           2. docker run -p 5000:5000 server 
+      
+                                            
+8. Select one of the options (Month in 2022) . 
+9. The first value is the predicted receipt count for that selected month.
+10. The next visualization is a line chart which shows the predicted receipt counts for all the days in that selected month. Feel free to hover over the plot and check the readings
+11. The last plot is a line chart which shows the values predicted for the entire year(2022).
 
 # Output :
 
@@ -72,11 +81,10 @@ python3, node , npm , flask , pip , tensorflow ,numpy, pandas, xgboost,joblib,fl
 
 # Instructions on how to run the tool locally on docker containers :
 Two dockerfiles have been created . One for client and other for server. These files could be found on their respective directorier in Final Folder
-1. I have packaged my app in a Docker containers .  Please feel free to pull it from DockerHub by running the below command :
-docker pull suryarajmachani/fetch-ml-project.
-2. To build and run locally . Follow the instructions below:
-   1. Move to the Final folder and run the command : docker build -t server .
-   2. Run the command : docker run -p 5000:5000 server
-   3. Move to the client folder and run the command :docker build -t client .
-   4. Run the command : docker run -p 5173:5173 client
+1. I have packaged my app in a Docker containers .Please feel free to pull it from DockerHub by running the below commands :
+   docker pull suryarajmachani/fetch-ml-project:client
+   docker pull suryarajmachani/fetch-ml-project:server
+3. To build and run locally . Follow the instructions below:
+   1. Run the command : docker run -p 5000:5000 suryarajmachani/fetch-ml-project:server
+   2. Run the command : docker run -p 5173:5173 suryarajmachani/fetch-ml-project:client
    5. Navigate to http://localhost:5173 
