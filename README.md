@@ -42,6 +42,7 @@ Receipt count prediction using XGBoost Regressor and LSTM
 # Installation libraries :
 There is requirements file at **Final** which has all the libraries needed to run the code.
 python3, node , npm , flask , pip , tensorflow ,numpy, pandas, xgboost,joblib,flask_cors,calender.
+Please update the xgboost library to the latest version using -> pip install xgboost --upgrade
 
 # Instructions on how to run the tool locally :
 1. Move to the Final/client folder and run the command : npm i (Installs all the packages)
