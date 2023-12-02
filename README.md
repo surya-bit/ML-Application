@@ -1,4 +1,4 @@
-# ML-Application
+# Receipt Forecast Pro: ML-Based Prediction Application with XGBoost Regressor
 Receipt count prediction using XGBoost Regressor and LSTM
 # File Structure and Code Explanation:
 1. The folder final-fetch contains 4 different subfolders . The **Final** folder contains all the main files to run the model and host the website.
